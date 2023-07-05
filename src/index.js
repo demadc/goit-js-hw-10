@@ -90,8 +90,12 @@ axios.defaults.headers.common["x-api-key"] = "live_WfU35sW4GoFIy2gtPF0xU3gWNdbGZ
 const BASE_URL = 'https://api.thecatapi.com/v1/';
 const END_POINT = `breeds`;
 
-const selectEl = document.querySelector('breed-select');
-const contentEl = doc
+const refs = {
+    selectEl: document.querySelector('breed-select'),
+    contentEl: document.querySelector('cat-info'),
+    itemEl: document.querySelector('js-item')
+}
+
 function fetchBreeds() {
     const option = new URLSearchParams({
         limit: 25,
