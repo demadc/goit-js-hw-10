@@ -4,41 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
-    <link rel="stylesheet" href="./sass/_example.scss">
+    <link rel="stylesheet" href="./sass/index.scss">
   </head>
 
   <body>
-    <select class="breed-select">
-      <option value="">Make your choice</option>
-      <option value="#abys">Abysinian</option>
-      <option value="#birm">Birman</option>
-      <option value="#bure">Burmese</option>
-      <option value="#amis">Australian Mist</option>
-      <option value="#amau">Arabian Mau</option>
-      <option value="#acur">American Curl</option>
-      <option value="#raga">Ragamuffin</option>
-      <option value="#ragd">Ragdoll</option>
-      <option value="#sava">Savannah</option>
-      <option value="#sfol">Scottish Fold</option>
-      <option value="#srex">Selkirk Rex</option>
-      <option value="#siam">Siamese</option>
-      <option value="#sing">Singapura</option>
-      <option value="#snow">Snowshoe</option>
-      <option value="#soma">Somali</option>
-      <option value="#tang">Turkish Angora</option>
-      <option value="#ycho">York Chocolate</option>
+    <select class="breed-select is-hidden">
+      <option value="value1">Make your choice</option>
     </select>
+  
     <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info">
-      <ul class="js-list">
-        <li class="js-item">
-          <img src="" alt="">
-          <h2></h2>
-          <p></p>
-        </li>
-      </ul>
-    </div>
+    <p class="error is-hidden">Oops! Something went wrong! Try reloading the page!</p>
+    <div class="cat-info"></div>
 
     <script src="index.js" type="module"></script>
   </body>

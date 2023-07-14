@@ -1,2 +1,64 @@
 @import './common';
-@import './example';
+
+body {
+  padding: 40px;
+}
+h2,
+p {
+  margin: 0;
+}
+
+.error {
+  padding: 12px 18px;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid red;
+  box-shadow: 0 0 0 6px rgba(255, 0, 0, 0.25);
+}
+.loader {
+  padding: 12px 18px;
+  color: lightgreen;
+  background-color: rgba(144, 238, 144, 0.1);
+  border-radius: 15px;
+  border: 1px solid lightgreen;
+  box-shadow: 0 0 0 6px rgba(144, 238, 144, 0.25);
+}
+
+.breed-select.is-hidden,
+.loader.is-hidden,
+.error.is-hidden {
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.breed-select {
+  margin-bottom: 40px;
+}
+.card {
+  width: 400px;
+  outline: 1px solid rgba(6, 6, 14, 0.7);
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.card-thumb {
+  width: 100%;
+  height: 260px;
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-wrapper {
+  padding: 10px;
+}
+.card-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
